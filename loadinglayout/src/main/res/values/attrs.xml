@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingLayout">
+        <attr name="default_state" format="enum">
+            <enum name="loading" value="1" />
+            <enum name="loading_overlay" value="2" />
+            <enum name="complete" value="3" />
+            <enum name="empty" value="4" />
+            <enum name="error" value="5" />
+        </attr>
+        <attr name="overlay_tint" format="color" />
+        <attr name="cross_fade_success" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Loading Layout</string>
+    <string name="no_results">No results!</string>
+    <string name="completed">Completed!</string>
+    <string name="test_button">Test button</string>
+    <string name="error">Error!</string>
+    <string name="loading">Loading</string>
+    <string name="empty">Empty</string>
+</resources>
