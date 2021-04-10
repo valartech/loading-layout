@@ -1,3 +1,9 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
 rootProject.name = "Loading Layout"
 include ':example'
 include ':loadinglayout'
