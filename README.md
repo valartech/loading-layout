@@ -11,7 +11,9 @@ completed/error/empty states.
 
 1. Add it to your XML layout and add in your various layouts as direct children of `LoadingLayout`.
 2. Make sure to add in `android:tag`s to your elements corresponding to what you'd like them to represent:
-Layout type | String tag
+
+
+Layout type | `android:tag`
 ------------ | -------------
 Complete | `@string/ll_complete`
 Loading | `@string/ll_loading`
@@ -74,7 +76,8 @@ dependencies {
 }
 ```
 
-Use the snapshot version by using
+
+If you want to use the snapshot version, you can use this instead:
 ```groovy
 implementation "com.valartech:loading-layout:master-SNAPSHOT"
 ```
