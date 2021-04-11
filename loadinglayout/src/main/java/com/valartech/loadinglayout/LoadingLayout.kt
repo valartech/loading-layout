@@ -17,10 +17,11 @@ import androidx.core.view.children
  * <p />
  *
  * There are 2 ways to use this layout:
- * 1. Tags (preferred): tag your views with the strings [R.string.ll_loading], [R.string.ll_complete] and [R.string.ll_empty].
+ * 1. Tags (preferred): tag your views with the strings [R.string.ll_loading], [R.string.ll_complete],
+ * [R.string.ll_error] and [R.string.ll_empty].
  * 2. Ordering:
- * Add in, top to bottom: loading view(like a progressbar), loaded view(actual layout) and a view for
- * the zero state.
+ * Add in, top to bottom: loading view(like a progressbar), loaded view(actual layout), a view for
+ * the zero state and a view for the error state.
  * <p />
  * Note that the order of the views as laid out in XML is significant if the second method is
  * used: this layout will misbehave if the order noted above isn't followed.

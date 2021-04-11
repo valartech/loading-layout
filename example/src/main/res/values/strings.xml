@@ -6,4 +6,6 @@
     <string name="error">Error!</string>
     <string name="loading">Loading</string>
     <string name="empty">Empty</string>
+    <string name="complete">Complete</string>
+    <string name="loading_overlay">Loading Overlay</string>
 </resources>

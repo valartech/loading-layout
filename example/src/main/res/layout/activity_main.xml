@@ -12,26 +12,19 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginBottom="20dp"
-        app:overlay_tint="#80ffcccc"
+        app:default_state="complete"
         app:layout_constraintBottom_toTopOf="@id/loading"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:overlay_tint="#80ffcccc">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#80ddc628"
-            android:gravity="center"
-            android:tag="@string/ll_empty"
-            android:text="@string/no_results"
-            android:textColor="#000"
-            android:textSize="20sp" />
-
+        <!--   Loading     -->
         <ProgressBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:tag="@string/ll_loading" />
 
+        <!--   Completed     -->
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -50,11 +43,23 @@
                 android:id="@+id/test_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/test_button"
                 android:layout_gravity="bottom|center_horizontal"
-                android:layout_marginBottom="50dp" />
+                android:layout_marginBottom="50dp"
+                android:text="@string/test_button" />
         </FrameLayout>
 
+        <!--  Empty      -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80ddc628"
+            android:gravity="center"
+            android:tag="@string/ll_empty"
+            android:text="@string/no_results"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <!--    Error    -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -102,7 +107,7 @@
         android:id="@+id/complete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Complete"
+        android:text="@string/complete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/empty"
         app:layout_constraintHorizontal_bias="0.5"
@@ -112,7 +117,7 @@
         android:id="@+id/loadingOverlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Loading Overlay"
+        android:text="@string/loading_overlay"
         app:layout_constraintBaseline_toBaselineOf="@id/loading"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/loading" />
