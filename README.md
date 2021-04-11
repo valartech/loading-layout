@@ -68,7 +68,6 @@ Your layout should end up looking something like this:
 ```groovy
 allprojects {
     repositories { //not under buildscript
-        jcenter()
         maven { url "https://jitpack.io" } 
     }
 }
