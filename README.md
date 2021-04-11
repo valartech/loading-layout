@@ -63,10 +63,11 @@ Your layout should end up looking something like this:
 
 ## Adding to your project
 
+[![Release](https://jitpack.io/v/com.valartech/loading-layout.svg)]
+
 ```groovy
 allprojects {
     repositories { //not under buildscript
-        jcenter()
         maven { url "https://jitpack.io" } 
     }
 }
