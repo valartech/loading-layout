@@ -7,11 +7,11 @@ plugins {
 }
 
 static def getAppVersionCode() {
-    return 1
+    return 2
 }
 
 static def getAppVersionName() {
-    return "0.1.0"
+    return "0.2.0"
 }
 
 group = 'com.valartech'
