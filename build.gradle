@@ -28,6 +28,8 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        //https://github.com/kotlin/kotlinx.html/wiki/Getting-started
+        maven { url "https://maven.pkg.jetbrains.space/public/p/kotlinx-html/maven" }
     }
 }
 
