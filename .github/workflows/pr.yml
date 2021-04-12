@@ -1,0 +1,37 @@
+name: Android Pull Request
+
+on:
+  pull_request:
+    branches:
+      - 'development'
+      - 'master'
+
+jobs:
+#TODO uncomment once tests are setup
+#  test:
+#    name: Run Unit Tests
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - uses: actions/checkout@v1
+#      - name: set up JDK 1.8
+#        uses: actions/setup-java@v1
+#        with:
+#          java-version: 1.8
+#      - name: Unit tests
+#        run: bash ./gradlew test --no-daemon --stacktrace
+#      - name: Run Detekt checks
+#        run: ./gradlew detekt --no-daemon --stacktrace
+
+  apk:
+    name: Generate APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: set up JDK 1.8
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+      - name: Build release AAR
+        run: bash ./gradlew clean :loadinglayout:assembleRelease --stacktrace

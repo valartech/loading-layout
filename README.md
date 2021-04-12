@@ -63,15 +63,17 @@ Your layout should end up looking something like this:
 
 ## Adding to your project
 
-[![Release](https://jitpack.io/v/com.valartech/loading-layout.svg)]
+![Release](https://jitpack.io/v/com.valartech/loading-layout.svg)
 
 ```groovy
+//in your project-level build.gradle
 allprojects {
     repositories { //not under buildscript
         maven { url "https://jitpack.io" } 
     }
 }
 
+//in your app module's build.gradle
 dependencies {
     implementation "com.valartech:loading-layout:${version}"
 }
