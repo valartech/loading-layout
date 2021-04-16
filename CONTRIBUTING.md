@@ -28,6 +28,8 @@ At this point, you're ready to make your changes! Feel free to ask for help; eve
 3. Make sure your code builds locally with `./gradlew clean :loading-layout:assembleRelease`
 4. Make a PR on the `master` branch.
 
+Please note that we enforce the [official kotlin coding conventions](https://kotlinlang.org/docs/coding-conventions.html).
+
 # How to report a bug
 > If you find a security vulnerability, do NOT open an issue. Email `hello@valartech.com` instead.
 
