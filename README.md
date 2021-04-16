@@ -1,4 +1,4 @@
-# Loading Layout for Android
+# Loading Layout for Android 🔁
 
 ![Loading layout example](gifs/example.gif)
 
