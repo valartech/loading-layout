@@ -4,13 +4,13 @@
 
 Loading layout is a container view that manages easy switching between loading, completed and other
 states of your screen with a single line. It takes away the boilerplate of setting `view.setVisibility`
-on all your various views when the state of your screen transitions between loading/loading overlay/
-completed/error/empty states.
+on all your various views when the state of your screen transitions between `loading`/`loading overlay`/
+`completed`/`error`/`empty` states.
 
 ## Usage
 
 1. Add it to your XML layout and add in your various layouts as direct children of `LoadingLayout`.
-2. Make sure to add in `android:tag`s to your elements corresponding to what you'd like them to represent:
+2. Make sure to add in `android:tag` to your elements corresponding to what you'd like them to represent:
 
 
 Layout type | `android:tag`
@@ -79,19 +79,6 @@ dependencies {
 }
 ```
 
-
-If you want to use the snapshot version, you can use this instead:
-```groovy
-implementation "com.valartech:loading-layout:master-SNAPSHOT"
-```
-instead, and adding the following to your module `build.gradle`:
-```groovy
-configurations.all {
-    // Check for updates every build for SNAPSHOTs
-    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
-}
-```
-
 ## Custom XML attributes
 
 Attribute | Description
@@ -106,6 +93,9 @@ as a child of the `LoadingLayout`.
 - The `LOADING_OVERLAY` is a special state that shows the `loading` state over the `completed` state,
 with a tint applied over it. It also prevents button clicks from reaching the `completed` layout.
 - Use `tools:default_state` to quickly check how different view states would look within your layout.
+
+## Contributing
+Thank you for wanting to add to this project! Please go through the [Contributing guide](CONTRIBUTING.md) for details on how you can help.
 
 ## Caveat
 This library does add in an extra view into your layout hierarchy, and would thus cause a slight hit 
