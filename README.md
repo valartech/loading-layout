@@ -59,7 +59,14 @@ Your layout should end up looking something like this:
     </com.valartech.loadinglayout.LoadingLayout>
 ```   
 
-3. You can now call `loadingLayout.setState()` to show/hide views!  
+3. And now chunks of code like this:
+```kotlin
+loadingView?.visibility = View.VISIBLE
+completeView?.visibility = View.GONE
+emptyView?.visibility = View.GONE
+errorView?.visibility = View.GONE
+```
+can be replaced by `loadingLayout.setState(LOADING)`
 
 ## Adding to your project
 
